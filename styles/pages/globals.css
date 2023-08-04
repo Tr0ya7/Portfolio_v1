@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Handjet&family=Mukta&display=swap");
+* {
+  padding: unset;
+  list-style: none;
+  color: white;
+  font-family: "Mukta", sans-serif;
+}
+* body {
+  margin: unset;
+}
+* a {
+  padding: unset;
+}/*# sourceMappingURL=globals.css.map */

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet&family=Mukta&family=Poppins&display=swap');
+
+.main {
+    min-height: 82vh;
+    padding: 5rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: colum;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #6591b4, #032038, #08263f);
+
+    ul {
+        font-size: 3.5rem;
+        padding-right: 8rem;
+
+        .hello {
+            font-size: 2rem;
+        }
+
+        li {
+            font-family: 'Handjet', cursive;
+            font-size: 2rem;
+            display: flex;
+
+            @keyframes blink {
+                0% { 
+                    opacity: 1; 
+                } 
+                
+                50% { 
+                    opacity: 0; 
+                }
+                
+                100% { 
+                    opacity: 1; 
+                }
+            }
+
+            .pointer {
+                height: 1.8rem;
+                max-width: .1px;
+                border: white .5px solid;
+                animation: blink 1s infinite;
+                margin-top: 1.5px;
+                margin: 1.5px 5px;
+            }
+        }
+
+        .contact_me {
+            justify-content: center;
+
+            button {
+                border-radius: 80px;
+                height: 80px;
+                width: 93%;
+                background-color: #6591b4;
+                border: none;
+                margin-top: 20px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    
+    hr {
+        margin: unset;
+    }
+}

@@ -1,0 +1,17 @@
+.content {
+    position: absolute;
+    padding-inline-start: 10rem;
+    width: -webkit-fill-available;
+
+    ul {
+        display: flex;
+        
+        .logo {
+            justify-content: start;
+        }
+
+        li {
+            width: -webkit-fill-available;
+        }
+    }
+}
