@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Handjet&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Handjet&family=Mukta&family=Poppins&display=swap");
-.main {
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@400;500&family=Mukta&family=Poppins&family=Press+Start+2P&display=swap");
+.page1 {
   min-height: 82vh;
   padding: 5rem 0;
   flex: 1;
@@ -10,14 +11,14 @@
   align-items: center;
   background: linear-gradient(120deg, #6591b4, #032038, #08263f);
 }
-.main ul {
+.page1 ul {
   font-size: 3.5rem;
   padding-right: 8rem;
 }
-.main ul .hello {
+.page1 ul .hello {
   font-size: 2rem;
 }
-.main ul li {
+.page1 ul li {
   font-family: "Handjet", cursive;
   font-size: 2rem;
   display: flex;
@@ -33,7 +34,7 @@
     opacity: 1;
   }
 }
-.main ul li .pointer {
+.page1 ul li .pointer {
   height: 1.8rem;
   max-width: 0.1px;
   border: white 0.5px solid;
@@ -41,10 +42,10 @@
   margin-top: 1.5px;
   margin: 1.5px 5px;
 }
-.main ul .contact_me {
+.page1 ul .contact_me {
   justify-content: center;
 }
-.main ul .contact_me button {
+.page1 ul .contact_me button {
   border-radius: 80px;
   height: 80px;
   width: 93%;
@@ -54,6 +55,46 @@
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
 }
-.main hr {
+.page1 hr {
   margin: unset;
+}
+
+.page2 {
+  display: flex;
+  min-height: 82vh;
+  padding: 5rem 10rem;
+  background-color: #032038;
+}
+.page2 .habilit_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.page2 .habilit_box .box {
+  background-color: grey;
+  transition: 0.3s;
+  margin: unset;
+  margin-right: 2rem;
+  filter: opacity(0.5);
+}
+.page2 .habilit_box .box:hover {
+  color: currentColor;
+  background-color: lightgrey;
+  filter: unset;
+  width: 7rem;
+  height: 7rem;
+}
+.page2 .habilit_box Img {
+  background-color: lightgrey;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.page2 ul {
+  margin: 0 0 0 auto;
+}
+.page2 ul .habilits {
+  font-family: "Press Start 2P", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 0.6rem;
 }/*# sourceMappingURL=Home.module.css.map */

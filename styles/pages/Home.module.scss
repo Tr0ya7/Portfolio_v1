@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Handjet&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Handjet&family=Mukta&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@400;500&family=Mukta&family=Poppins&family=Press+Start+2P&display=swap');
 
-.main {
+.page1 {
     min-height: 82vh;
     padding: 5rem 0;
     flex: 1;
@@ -66,5 +67,51 @@
     
     hr {
         margin: unset;
+    }
+}
+
+.page2 {
+    display: flex;
+    min-height: 82vh;
+    padding: 5rem 10rem;
+    background-color: #032038;
+    
+    .habilit_box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .box {
+            background-color: grey;
+            transition: .3s;
+            margin: unset;
+            margin-right: 2rem;
+            filter: opacity(.5);
+
+            &:hover {
+                color: currentColor;
+                background-color: lightgrey;
+                filter: unset;
+                width: 7rem;
+                height: 7rem;
+            }
+        }
+
+        Img {
+            background-color: lightgrey;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+    }
+
+    ul {
+        margin: 0 0 0 auto;
+
+        .habilits {
+            font-family: "Press Start 2P", cursive;
+            font-size: 2.5rem;
+            margin-bottom: .6rem;
+        }
     }
 }

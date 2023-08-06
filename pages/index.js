@@ -7,6 +7,102 @@ import Link from 'next/link'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  function html_click() {
+    const title = document.querySelector(`.habilit_title`);
+    const description = document.querySelector(`.habilit_description`);
+    
+    title.innerHTML = `HTML`;
+    description.innerHTML = `é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.`;
+  }
+
+  function css_click() {
+    const title = document.querySelector(`.habilit_title`);
+    const description = document.querySelector(`.habilit_description`);
+    
+    title.innerHTML = `css`;
+    description.innerHTML = ``;
+  }
+  
+  function sass_click() {
+    const title = document.querySelector(`.habilit_title`);
+    const description = document.querySelector(`.habilit_description`);
+    
+    title.innerHTML = `sass`;
+    description.innerHTML = ``;
+  }
+  
+  function bootstrap_click() {
+    const title = document.querySelector(`.habilit_title`);
+    const description = document.querySelector(`.habilit_description`);
+    
+    title.innerHTML = `bootstrap`;
+    description.innerHTML = ``;
+  }
+
+  function fontAwesome_click() {
+    const title = document.querySelector(`.habilit_title`);
+    const description = document.querySelector(`.habilit_description`);
+    
+    title.innerHTML = `fontAwesome`;
+    description.innerHTML = ``;
+  }
+
+  function javascript_click() {
+    const title = document.querySelector(`.habilit_title`);
+    const description = document.querySelector(`.habilit_description`);
+    
+    title.innerHTML = `js`;
+    description.innerHTML = ``;
+  }
+
+  function c_sharp_click() {
+    const title = document.querySelector(`.habilit_title`);
+    const description = document.querySelector(`.habilit_description`);
+    
+    title.innerHTML = `c_sharp`;
+    description.innerHTML = ``;
+  }
+
+  function xamarin_click() {
+    const title = document.querySelector(`.habilit_title`);
+    const description = document.querySelector(`.habilit_description`);
+    
+    title.innerHTML = `xamarin`;
+    description.innerHTML = ``;
+  }
+
+  function delphi_click() {
+    const title = document.querySelector(`.habilit_title`);
+    const description = document.querySelector(`.habilit_description`);
+    
+    title.innerHTML = `delphi`;
+    description.innerHTML = ``;
+  }
+
+  function db_click() {
+    const title = document.querySelector(`.habilit_title`);
+    const description = document.querySelector(`.habilit_description`);
+    
+    title.innerHTML = `dbs`;
+    description.innerHTML = ``;
+  }
+
+  function git_click() {
+    const title = document.querySelector(`.habilit_title`);
+    const description = document.querySelector(`.habilit_description`);
+    
+    title.innerHTML = `git`;
+    description.innerHTML = ``;
+  }
+
+  function github_click() {
+    const title = document.querySelector(`.habilit_title`);
+    const description = document.querySelector(`.habilit_description`);
+    
+    title.innerHTML = `github`;
+    description.innerHTML = ``;
+  }
+
   return (
     <>
       <Head>
@@ -15,7 +111,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
+      <div className={`${styles.page1} ${inter.className}`}>
         <ul>
           <ul className={styles.hello}>
             Olá, eu sou
@@ -25,11 +121,37 @@ export default function Home() {
             Desenvolvedor Front-End<hr className={styles.pointer} />
           </li>
           <li className={styles.contact_me}>
-            <button type='button'>Me Contate</button>
+            <button type="button">Me Contate</button>
           </li>
         </ul>
         <Image src="/image/" width="200" height="200" />
-      </main>
+      </div>
+      <div className={styles.page2}>
+        <div className={styles.habilit_box}>
+          <Image className={`${styles.box} ${styles.html_box}`} onClick={html_click} src="/images/habilits-shields/html.png" width="96" height="96" />
+          <Image className={`${styles.box} ${styles.css_box}`} onClick={css_click} src="/images/habilits-shields/css.png" width="96" height="96" />
+          <Image className={`${styles.box} ${styles.sass_box}`} onClick={sass_click} src="/images/habilits-shields/sass.png" width="96" height="96" />
+          <Image className={`${styles.box} ${styles.bootstrap_box}`} onClick={bootstrap_click} src="/images/habilits-shields/bootstrap.png" width="96" height="96" />
+          <Image className={`${styles.box} ${styles.fontAwesome_box}`} onClick={fontAwesome_click} src="/images/habilits-shields/fontAwesome.png" width="96" height="96" />
+          <Image className={`${styles.box} ${styles.javascript_box}`} onClick={javascript_click} src="/images/habilits-shields/javascript.png" width="96" height="96" />
+          <Image className={`${styles.box} ${styles.c_sharp_box}`} onClick={c_sharp_click} src="/images/habilits-shields/c-sharp.png" width="96" height="96" />
+          <Image className={`${styles.box} ${styles.xamarin_box}`} onClick={xamarin_click} src="/images/habilits-shields/xamarin.png" width="96" height="96" />
+          <Image className={`${styles.box} ${styles.delphi_box}`} onClick={delphi_click} src="/images/habilits-shields/delphi.png" width="96" height="96" />
+          <Image className={`${styles.box} ${styles.db_box}`} onClick={db_click} src="/images/habilits-shields/db.png" width="96" height="96" />
+          <Image className={`${styles.box} ${styles.git_box}`} onClick={git_click} src="/images/habilits-shields/git.png" width="96" height="96" />
+          <Image className={`${styles.box} ${styles.github_box}`} onClick={github_click} src="/images/habilits-shields/github.png" width="96" height="96" />
+        </div>
+        <ul>
+          <li className={styles.habilits}>
+            Habilidades
+          </li>
+          <li className='habilit_title'>
+            title
+          </li>
+          <li className='habilit_description'>
+          </li>
+        </ul>
+      </div>
     </>
   )
 }

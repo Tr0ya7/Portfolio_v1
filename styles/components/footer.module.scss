@@ -1,0 +1,21 @@
+@import '../preDefinitions.scss';
+
+.content {
+    background-color: white;
+    
+    ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+            color: black;
+            display: flex;
+
+            a {
+                svg {
+                    margin: .3rem .5rem;
+                }
+            }
+        }
+    }
+}

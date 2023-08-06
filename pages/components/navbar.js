@@ -1,23 +1,34 @@
 import styles from '@/styles/components/navbar.module.css'
+import Link from 'next/link'
 
 export default function Navbar() {
     return (
         <div className={styles.content}>
             <ul>
                 <li className={styles.logo}>
-                    Logo
+                    <Link href="/">
+                        Logo
+                    </Link>
                 </li>
                 <li>
-                    Início
+                    <Link href="/">
+                        Início
+                    </Link>
                 </li>
                 <li>
-                    Sobre mim
+                    <Link href="../about-me">
+                        Sobre mim
+                    </Link>
                 </li>
                 <li>
-                    Projetos
+                    <Link href="../projects">
+                        Projetos
+                    </Link>
                 </li>
                 <li>
-                    Habilidades
+                    <Link href="../habilits">
+                        Habilidades
+                    </Link>
                 </li>
             </ul>
         </div>

@@ -12,5 +12,14 @@
 
     a {
         padding: unset;
+        text-decoration: none;
+    }
+
+    ::-webkit-scrollbar {
+        width: 4px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: #08263f;
     }
 }

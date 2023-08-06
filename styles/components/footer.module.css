@@ -1,1 +1,14 @@
-/*# sourceMappingURL=footer.module.css.map */
+.content {
+  background-color: white;
+}
+.content ul {
+  display: flex;
+  justify-content: center;
+}
+.content ul li {
+  color: black;
+  display: flex;
+}
+.content ul li a svg {
+  margin: 0.3rem 0.5rem;
+}/*# sourceMappingURL=footer.module.css.map */
