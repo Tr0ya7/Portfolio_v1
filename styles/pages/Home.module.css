@@ -1,12 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Handjet&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Handjet&family=Mukta&family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Handjet:wght@400;500&family=Mukta&family=Poppins&family=Press+Start+2P&display=swap");
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .page1 {
   min-height: 82vh;
-  padding: 5rem 0;
+  padding: 5rem 10rem;
   flex: 1;
-  display: flex;
   flex-direction: colum;
+  display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(120deg, #6591b4, #032038, #08263f);
@@ -23,24 +33,13 @@
   font-size: 2rem;
   display: flex;
 }
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .page1 ul li .pointer {
   height: 1.8rem;
   max-width: 0.1px;
   border: white 0.5px solid;
   animation: blink 1s infinite;
-  margin-top: 1.5px;
-  margin: 1.5px 5px;
+  margin-top: 0.1rem;
+  margin: 0.1rem 0.3rem;
 }
 .page1 ul .contact_me {
   justify-content: center;
@@ -60,41 +59,77 @@
 }
 
 .page2 {
+  min-height: 82vh;
+  padding: 5rem 10rem;
+  flex: 1;
+  flex-direction: colum;
+  display: flex;
+  justify-content: center;
+  background-color: #08263f;
+}
+.page2 img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page2 ul {
+  margin: 0 0 0 8rem;
+  width: 50%;
+}
+.page2 ul .title {
+  font-size: xx-large;
+  text-align: center;
+}
+.page2 ul .text {
+  font-size: large;
+  margin: unset;
+}
+
+.page3 {
   display: flex;
   min-height: 82vh;
   padding: 5rem 10rem;
+  flex: 1;
+  flex-direction: colum;
   background-color: #032038;
 }
-.page2 .habilit_box {
+.page3 .habilit_box {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  padding: 5px;
 }
-.page2 .habilit_box .box {
+.page3 .habilit_box .box {
   background-color: grey;
   transition: 0.3s;
   margin: unset;
   margin-right: 2rem;
   filter: opacity(0.5);
 }
-.page2 .habilit_box .box:hover {
-  color: currentColor;
+.page3 .habilit_box .box:hover {
   background-color: lightgrey;
   filter: unset;
   width: 7rem;
   height: 7rem;
 }
-.page2 .habilit_box Img {
+.page3 .habilit_box .next_box {
+  padding: 9px;
+}
+.page3 .habilit_box Img {
   background-color: lightgrey;
   border-radius: 15px;
   cursor: pointer;
 }
-.page2 ul {
+.page3 ul {
   margin: 0 0 0 auto;
+  width: 50%;
 }
-.page2 ul .habilits {
+.page3 ul .habilits {
   font-family: "Press Start 2P", cursive;
   font-size: 2.5rem;
   margin-bottom: 0.6rem;
+}
+.page3 ul .habilit_description li {
+  list-style: disc;
 }/*# sourceMappingURL=Home.module.css.map */

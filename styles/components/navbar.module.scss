@@ -1,10 +1,12 @@
+@import '../preDefinitions.scss';
+
 .content {
     position: absolute;
     padding-inline-start: 10rem;
     width: -webkit-fill-available;
 
     ul {
-        display: flex;
+        display: $display;
         
         .logo {
             justify-content: start;

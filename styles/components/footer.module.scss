@@ -4,12 +4,12 @@
     background-color: white;
     
     ul {
-        display: flex;
+        display: $display;
         justify-content: center;
 
         li {
             color: black;
-            display: flex;
+            display: $display;
 
             a {
                 svg {

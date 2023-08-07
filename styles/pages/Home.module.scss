@@ -1,15 +1,10 @@
+@import '../preDefinitions.scss';
 @import url('https://fonts.googleapis.com/css2?family=Handjet&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Handjet&family=Mukta&family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@400;500&family=Mukta&family=Poppins&family=Press+Start+2P&display=swap');
 
 .page1 {
-    min-height: 82vh;
-    padding: 5rem 0;
-    flex: 1;
-    display: flex;
-    flex-direction: colum;
-    justify-content: center;
-    align-items: center;
+    @include minPadding;
+    @include flexCenter;
     background: linear-gradient(120deg, #6591b4, #032038, #08263f);
 
     ul {
@@ -17,35 +12,21 @@
         padding-right: 8rem;
 
         .hello {
-            font-size: 2rem;
+            font-size: $font-size;
         }
 
         li {
             font-family: 'Handjet', cursive;
-            font-size: 2rem;
-            display: flex;
-
-            @keyframes blink {
-                0% { 
-                    opacity: 1; 
-                } 
-                
-                50% { 
-                    opacity: 0; 
-                }
-                
-                100% { 
-                    opacity: 1; 
-                }
-            }
+            font-size: $font-size;
+            display: $display;
 
             .pointer {
                 height: 1.8rem;
                 max-width: .1px;
                 border: white .5px solid;
                 animation: blink 1s infinite;
-                margin-top: 1.5px;
-                margin: 1.5px 5px;
+                margin-top: $margin-top;
+                margin: $margin-top .3rem;
             }
         }
 
@@ -66,36 +47,63 @@
     }
     
     hr {
-        margin: unset;
+        margin: $margin;
     }
 }
 
 .page2 {
-    display: flex;
-    min-height: 82vh;
-    padding: 5rem 10rem;
+    @include minPadding;
+    display: $display;
+    justify-content: center;
+    background-color: #08263f;
+
+    img {
+        @include flexCenter;
+    }
+
+    ul {
+        margin: 0 0 0 8rem;
+        width: 50%;
+
+        .title {
+            font-size: xx-large;
+            text-align: center;
+        }
+
+        .text {
+            font-size: large;
+            margin: $margin;
+        }
+    }
+}
+
+.page3 {
+    display: $display;
+    @include minPadding;
     background-color: #032038;
     
     .habilit_box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexCenter;
         flex-wrap: wrap;
+        padding: 5px;
 
         .box {
             background-color: grey;
             transition: .3s;
-            margin: unset;
+            margin: $margin;
             margin-right: 2rem;
             filter: opacity(.5);
 
             &:hover {
-                color: currentColor;
                 background-color: lightgrey;
                 filter: unset;
                 width: 7rem;
                 height: 7rem;
             }
+        }
+
+        .next_box {
+            padding: 9px;
         }
 
         Img {
@@ -107,11 +115,18 @@
 
     ul {
         margin: 0 0 0 auto;
+        width: 50%;
 
         .habilits {
             font-family: "Press Start 2P", cursive;
             font-size: 2.5rem;
             margin-bottom: .6rem;
+        }
+
+        .habilit_description {
+            li {
+                list-style: disc;
+            }
         }
     }
 }

@@ -1,7 +1,7 @@
 import styles from '@/styles/components/navbar.module.css'
 import Link from 'next/link'
 
-export default function Navbar() {
+export default function Navbar() {   
     return (
         <div className={styles.content}>
             <ul>
@@ -11,22 +11,17 @@ export default function Navbar() {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/">
+                    <Link href="#page1">
                         Início
                     </Link>
                 </li>
                 <li>
-                    <Link href="../about-me">
+                    <Link href="#page2">
                         Sobre mim
                     </Link>
                 </li>
                 <li>
-                    <Link href="../projects">
-                        Projetos
-                    </Link>
-                </li>
-                <li>
-                    <Link href="../habilits">
+                    <Link href="#page3">
                         Habilidades
                     </Link>
                 </li>

@@ -1,5 +1,31 @@
+$font-size: 2rem;
+$margin-top: .1rem;
+$display: flex;
+$margin: unset;
+
 @mixin flexCenter() {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin minPadding() {
+    min-height: 82vh;
+    padding: 5rem 10rem;
+    flex: 1;
+    flex-direction: colum;
+}
+
+@keyframes blink {
+    0% { 
+        opacity: 1; 
+    } 
+    
+    50% { 
+        opacity: 0; 
+    }
+    
+    100% { 
+        opacity: 1; 
+    }
 }
