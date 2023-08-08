@@ -1,0 +1,26 @@
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.resume {
+  min-height: 82vh;
+  padding: 5rem 10rem;
+  flex: 1;
+  flex-direction: colum;
+  display: flex;
+  justify-content: center;
+  background-color: purple;
+}
+.resume button {
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-min-content;
+  height: min-content;
+}/*# sourceMappingURL=resume.module.css.map */

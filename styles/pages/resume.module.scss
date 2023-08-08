@@ -1,0 +1,13 @@
+@import '../preDefinitions.scss';
+
+.resume {
+    @include minPadding;
+    display: flex;
+    justify-content: center;
+    background-color: purple;
+
+    button {
+        width: max-content;
+        height: min-content;
+    }
+}

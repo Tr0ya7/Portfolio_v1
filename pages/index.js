@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/pages/Home.module.css'
-import Habilit_box from './components/habilit_box'
+import HabilitBox from './components/habilitBox'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -43,7 +43,7 @@ export default function Home() {
         </ul>
       </div>
       <div className={styles.page3} id="page3">
-        <Habilit_box />
+        <HabilitBox />
         <ul>
           <li className={styles.habilits}>
             Habilidades

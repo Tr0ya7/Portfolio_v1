@@ -1,0 +1,33 @@
+@import '../preDefinitions.scss';
+
+.habilit_box {
+    @include flexCenter;
+    flex-wrap: wrap;
+    padding: 5px;
+    height: 36rem;
+
+    .box {
+        background-color: grey;
+        transition: .3s;
+        margin: $margin;
+        margin-right: 2rem;
+        filter: opacity(.5);
+
+        &:hover {
+            background-color: lightgrey;
+            filter: unset;
+            width: 7rem;
+            height: 7rem;
+        }
+    }
+    
+    .next_box {
+        padding: 9px;
+    }
+
+    Img {
+        background-color: lightgrey;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+}

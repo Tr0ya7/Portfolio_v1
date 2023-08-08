@@ -1,0 +1,40 @@
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.habilit_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px;
+  height: 36rem;
+}
+.habilit_box .box {
+  background-color: grey;
+  transition: 0.3s;
+  margin: unset;
+  margin-right: 2rem;
+  filter: opacity(0.5);
+}
+.habilit_box .box:hover {
+  background-color: lightgrey;
+  filter: unset;
+  width: 7rem;
+  height: 7rem;
+}
+.habilit_box .next_box {
+  padding: 9px;
+}
+.habilit_box Img {
+  background-color: lightgrey;
+  border-radius: 15px;
+  cursor: pointer;
+}/*# sourceMappingURL=habilitBox.module.css.map */
