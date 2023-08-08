@@ -25,6 +25,11 @@ export default function Navbar() {
                         Habilidades
                     </Link>
                 </li>
+                <li>
+                    <Link href="../resume">
+                        Curr&iacute;culo
+                    </Link>
+                </li>
             </ul>
         </div>
     )

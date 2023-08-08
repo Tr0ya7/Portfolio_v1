@@ -93,34 +93,6 @@
   flex-direction: colum;
   background-color: #032038;
 }
-.page3 .habilit_box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 5px;
-}
-.page3 .habilit_box .box {
-  background-color: grey;
-  transition: 0.3s;
-  margin: unset;
-  margin-right: 2rem;
-  filter: opacity(0.5);
-}
-.page3 .habilit_box .box:hover {
-  background-color: lightgrey;
-  filter: unset;
-  width: 7rem;
-  height: 7rem;
-}
-.page3 .habilit_box .next_box {
-  padding: 9px;
-}
-.page3 .habilit_box Img {
-  background-color: lightgrey;
-  border-radius: 15px;
-  cursor: pointer;
-}
 .page3 ul {
   margin: 0 0 0 auto;
   width: 50%;
