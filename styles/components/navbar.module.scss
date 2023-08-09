@@ -1,19 +1,39 @@
 @import '../preDefinitions.scss';
 
 .content {
-    position: absolute;
+    position: fixed;
     padding-inline-start: 10rem;
-    width: -webkit-fill-available;
+    width: $width;
+    background: #ffffff30;
+    border: 1px solid black;
+    backdrop-filter: blur(5px);
 
     ul {
         display: $display;
         
         .logo {
             justify-content: start;
+            margin: unset;
         }
 
         li {
-            width: -webkit-fill-available;
+            width: $width;
+            margin-top: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .content {
+        position: fixed;
+        background-color: unset;
+
+        ul {
+            .logo {
+                display: fixed;
+                position: fixed;
+                left: 0;
+            }
         }
     }
 }

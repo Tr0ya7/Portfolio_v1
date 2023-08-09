@@ -2,6 +2,7 @@ $font-size: 2rem;
 $margin-top: .1rem;
 $display: flex;
 $margin: unset;
+$width: -webkit-fill-available;
 
 @mixin flexCenter() {
     display: flex;
@@ -14,6 +15,11 @@ $margin: unset;
     padding: 5rem 10rem;
     flex: 1;
     flex-direction: colum;
+}
+
+@mixin fade() {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
 }
 
 @keyframes blink {

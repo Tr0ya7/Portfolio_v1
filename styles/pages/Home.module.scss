@@ -5,6 +5,7 @@
 .page1 {
     @include minPadding;
     @include flexCenter;
+    align-items: center;
     background: linear-gradient(120deg, #6591b4, #032038, #08263f);
 
     ul {
@@ -14,12 +15,12 @@
         .hello {
             font-size: $font-size;
         }
-
+    
         li {
             font-family: 'Handjet', cursive;
             font-size: $font-size;
             display: $display;
-
+    
             .pointer {
                 height: 1.8rem;
                 max-width: .1px;
@@ -29,10 +30,14 @@
                 margin: $margin-top .3rem;
             }
         }
-
+    
         .contact_me {
             justify-content: center;
-
+    
+            a {
+                width: 100%;
+            }
+    
             button {
                 border-radius: 80px;
                 height: 80px;
@@ -42,10 +47,15 @@
                 margin-top: 20px;
                 font-family: 'Poppins', sans-serif;
                 font-size: 1.5rem;
+                cursor: pointer;
             }
         }
     }
     
+    img {
+        margin-bottom: 50px;
+    }
+        
     hr {
         margin: $margin;
     }
@@ -53,18 +63,17 @@
 
 .page2 {
     @include minPadding;
-    display: $display;
-    justify-content: center;
+    @include flexCenter;
     background-color: #08263f;
 
     img {
-        @include flexCenter;
+        align-self: center;
     }
-
+    
     ul {
         margin: 0 0 0 8rem;
         width: 50%;
-
+    
         .title {
             font-size: xx-large;
             text-align: center;
@@ -79,22 +88,70 @@
 
 .page3 {
     display: $display;
+    justify-content: center;
     @include minPadding;
     background-color: #032038;
 
     ul {
         margin: 0 0 0 auto;
         width: 50%;
-
+    
         .habilits {
             font-family: "Press Start 2P", cursive;
             font-size: 2.5rem;
             margin-bottom: .6rem;
         }
-
+    
         .habilit_description {
             li {
                 list-style: disc;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .content {
+        overflow-y: hidden;
+
+        .page1 {
+            ul {
+                font-size: 1.44rem;
+                padding-right: 8rem;
+                width: max-content;
+        
+                .hello {
+                    font-size: 1rem;
+                    width: max-content;
+                }
+        
+                li {
+                    font-family: 'Handjet', cursive;
+                    font-size: 1rem;
+                    display: $display;
+                }
+
+                .pointer {
+                    height: 1rem;
+                    max-width: .1px;
+                    border: white .5px solid;
+                    animation: blink 1s infinite;
+                    margin-top: -1px;
+                }
+            }
+            
+            .contact_me {
+                justify-content: start;
+    
+                button {
+                    border-radius: 80px;
+                    height: 40px;
+                    width: 60%;
+                    background-color: #6591b4;
+                    border: none;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 1rem;
+                }
             }
         }
     }
