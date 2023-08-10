@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/pages/Home.module.css'
 import HabilitBox from './components/habilitBox'
-import Link from 'next/Link'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,14 +26,14 @@ export default function Home() {
             Desenvolvedor Front-End<hr className={styles.pointer} />
           </li>
           <li className={styles.contact_me}>
-            <Link href="LuizHBarros@proton.me">
+            <Link href="https://www.linkedin.com/in/luiz-henrique-barros-45a2b9281/">
               <button type="button">
                 Me Contate
               </button>
             </Link>
           </li>
         </ul>
-        <Image src="/images/next-js-seeklogo.com.svg" width="350" height="350" />
+        <Image src="/images/next-js.png" width="350" height="200" />
       </div>
       <div className={styles.page2} id="page2">
         <Image src="/images/about.png" width="225" height="225" />
