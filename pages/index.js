@@ -24,7 +24,7 @@ export default function Home() {
             Desenvolvedor Front-End<hr className={styles.pointer} />
           </li>
           <li className={styles.contact_me}>
-            <Link href="https://www.linkedin.com/in/luiz-henrique-barros-45a2b9281/">
+            <Link href="https://drive.google.com/file/d/1BEwtUcCSzNoloU237fkN0kk78WxIQY-4/view?usp=sharing">
               <button type="button">
                 Me Contate
               </button>
