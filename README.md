@@ -3,7 +3,7 @@
 <li>Desenvolvimento Front-End</li><br>
 
 ### Tecnologias Usadas
-<li>Next.Js</li>
+<li>Next.js</li>
 <li>JSX</li>
 <li>JavaScript</li>
 <li>SCSS</li>
