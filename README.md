@@ -9,7 +9,7 @@
 <li>SCSS</li>
 <li>Json</li><br>
 
-## Projeto ainda não contém media queries (serão adicionadas logo mais).
+Projeto ainda não contém media queries (serão adicionadas logo mais).
 
 ### Introdução para rodar o projeto
 Clone o repositório com o comando **git clone**:
