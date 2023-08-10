@@ -1,5 +1,5 @@
 # Meu primeiro portfólio profissional
-<li>Primeiro projeto com uso de Next.Js</li>
+<li>Primeiro projeto com uso de Next.js</li>
 <li>Desenvolvimento Front-End</li><br>
 
 ### Tecnologias Usadas
