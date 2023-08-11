@@ -27,7 +27,7 @@ export default function Navbar() {
                     </Link>
                 </li>
                 <li>
-                    <Link href="https://drive.google.com/file/d/1nxchwWfnbzgfb2lvzMeRXt_pwEdOhhj9/view?usp=drive_link">
+                    <Link href="https://drive.google.com/file/d/1BEwtUcCSzNoloU237fkN0kk78WxIQY-4/view?usp=sharing">
                         Curr&iacute;culo
                     </Link>
                 </li>
